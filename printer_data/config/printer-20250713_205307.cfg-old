@@ -3,9 +3,9 @@
 [include mainsail.cfg]
 [include Macros/*]
 [include Settings/*]
-[include HX.cfg]
+#[include HX.cfg]
 #[include EBB36.cfg]
-#[include RP2350.cfg]
+[include RP2350.cfg]
 
 #[include Trad_Rack/*.cfg]
 #[include MKS_Robin_Nano.cfg]
@@ -60,8 +60,6 @@ retract_length: .4
 unretract_extra_length: 0.0
 retract_speed: 40
 unretract_speed: 30
-
-
 
 #[shaketune]
 #result_folder: ~/printer_data/config/ShakeTune_results
@@ -149,5 +147,5 @@ unretract_speed: 30
 #*# yz_skew = 0.0
 #*#
 #*# [load_cell_probe]
-#*# counts_per_gram = 76.94600
-#*# reference_tare_counts = 1130166
+#*# counts_per_gram = 62.68300
+#*# reference_tare_counts = -119397

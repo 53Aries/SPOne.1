@@ -4,7 +4,6 @@
 [include Macros/*]
 [include Settings/*]
 [include HX.cfg]
-[include shell_command.cfg]
 #[include EBB36.cfg]
 #[include RP2350.cfg]
 
@@ -146,7 +145,7 @@ unretract_speed: 30
 #*# xz_skew = 0.0
 #*# yz_skew = 0.0
 #*#
-#*# [load_cell_probe]
+#*# [load_cell]
 #*# counts_per_gram = 76.94600
 #*# reference_tare_counts = 1130166
 #*#
@@ -190,4 +189,4 @@ unretract_speed: 30
 #*# min_y = 20.0
 #*# max_y = 279.92
 
-
+[include shell_command.cfg]

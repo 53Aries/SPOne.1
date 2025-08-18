@@ -11,6 +11,7 @@ trusted_clients:
     169.254.0.0/16
     172.16.0.0/12
     192.168.0.0/16
+    FC00::/7
     FE80::/10
     ::1/128
 cors_domains:
@@ -20,7 +21,7 @@ cors_domains:
     *://localhost:*
     *://my.mainsail.xyz
     *://app.fluidd.xyz
-
+    
 [octoprint_compat]
 
 [history]
@@ -34,3 +35,12 @@ path: /home/klipper/mainsail
 repo: mainsail-crew/mainsail
 channel: stable
 type: web
+persistent_files:
+    config.json
+
+[update_manager mainsail-config]
+managed_services: klipper
+origin: https://github.com/mainsail-crew/mainsail-config.git
+path: /home/klipper/mainsail-config
+primary_branch: master
+type: git_repo
